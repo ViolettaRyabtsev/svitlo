@@ -1,0 +1,59 @@
+.header-container{
+background-image: url("../public/fam2.jpg");
+  background-position-x: center;
+  background-position-y: top 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+padding: 50px;
+padding-bottom: 97px;
+
+.navigation-container {
+position: relative;
+width: 1000px;
+margin: auto;
+border-top: solid 150px rgba(#F3D250, 0.8)   ;
+display: flex;
+
+h2{
+    font-size: 45px;
+    height:300px;
+    width: 550px;
+  
+    transform: translate(5%, -65%);
+    padding: 20px;
+    font-family: 'Source Sans Pro';
+    font-size: 75px;
+    font-weight: bold;
+}
+
+ul{
+    transform: translate(-10%, -25%);
+
+width: 400px;
+    li {
+        display: inline-block;
+        margin-left: 25px;
+        font-size: 20px;
+        font-family: 'Source Sans Pro';
+    
+    
+    }
+    
+}
+
+
+
+
+    }
+}
+
+
+.border-bottom {
+    height:200px;
+    width:100%;
+    background:url("../public/border.webp") repeat-x;
+    background-size:70px 70px;
+    background-position:bottom;
+    position:absolute;
+    bottom:0; 
+}
