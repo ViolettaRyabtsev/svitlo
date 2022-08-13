@@ -25,8 +25,8 @@ const Body = () => {
             Make A Real Change <br></br>In Someone's Life
           </h2>
         </div>
-        <div className="first">1 colon</div>
-        <div className="second"> 2 colon </div>
+        <div className="first">1 col</div>
+        <div className="second"> 2 col </div>
       </div>
       <div className="volunteer-time">
         {timeObject.map((element) => (
@@ -41,9 +41,21 @@ const Body = () => {
           </div>
         ))}
       </div>
-      <div className="image-container">
-        <img src="../candel.jpg" alt="event" />
+      <div className="image-container-banner">
+        <div className="clouds">
+          <img src="../cloud1.png" style={{ "--i": "1" }} alt="cloud" />
+          <img src="../cloud2.png" style={{ "--i": "2" }} alt="cloud" />
+          <img src="../cloud3.png" style={{ "--i": "3" }} alt="cloud" />
+          <img src="../cloud4.png" style={{ "--i": "4" }} alt="cloud" />
+          <img src="../cloud5.png" style={{ "--i": "5" }} alt="cloud" />
+          <img src="../cloud5.png" style={{ "--i": "10" }} alt="cloud" />
+          <img src="../cloud5.png" style={{ "--i": "9" }} alt="cloud" />
+          <img src="../cloud5.png" style={{ "--i": "8" }} alt="cloud" />
+          <img src="../cloud5.png" style={{ "--i": "7" }} alt="cloud" />
+          <img src="../cloud5.png" style={{ "--i": "6" }} alt="cloud" />
+        </div>
       </div>
+      <section></section>
     </div>
   );
 };

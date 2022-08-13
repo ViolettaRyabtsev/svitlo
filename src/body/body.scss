@@ -71,26 +71,49 @@ display: flex;
 
 }
 
-.image-container{
+.image-container-banner{
 
-background-color: #F3D250;
-height: 500px;
+background-image: url("../../public/candel.jpg");
+position: relative;
 background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
+width: 100%;
+height: 100vh;
 background-size: cover;
+background-position: bottom;
+display: flex; 
+justify-content: center;
+align-items: center;
+margin-top: 100px;
 
-    img{
-        width: 500px;
-        height: 500px;
-        overflow-y: auto;
-        perspective: 2px;
-        transform-style: preserve-3d;
-        position: relative;
-        justify-content: center;
-        color: white;
-          transform: translateZ(-1px) scale(1.5);
-          z-index: -1;
-    }
+.clouds{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+pointer-events: none;
+
+img{
+position: absolute;
+bottom: 0; 
+max-width: 100%;
+animation: animate calc(3s * var(--i)) linear infinite; 
+   }
+ }
+}
+
+@keyframes animate {
+0%{
+    opacity: 0;
+    transform: scale(2);
+}
+25%,75% 
+{
+opacity: 0.9;
+}
+100%{
+    transform: scale(4);
+}
 
 }
