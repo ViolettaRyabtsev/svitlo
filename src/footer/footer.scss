@@ -2,10 +2,26 @@
 margin-top: 200px;
 display: grid;
 grid-template-columns: 400px 400px 400px;
-grid-template-rows: 200px 400px ;
+grid-template-rows: 300px 500px ;
 margin-left: auto;
 margin-right: auto;
 justify-content: center;
+
+.color-block{
+    background-color: #fdd765;
+    width: 300px;
+    height: 50px;
+    opacity: 0.8;
+        }
+
+        h2{
+            transform:  translate(3%, -130%);
+            font-family: 'Abel';
+            font-size: 60px;
+            font-weight: bold;
+            opacity: 0.8;
+
+        }
 
 .mission-header{
     grid-column-start: 1;
@@ -39,25 +55,25 @@ justify-content: center;
     bottom: -4px;
     left: 0;
  position: relative;
-  
     width: 100%;
 }
 
 
 .color-block-container{
-    background-color: #5da2d5;
+    background-color: #b5cadf;
     opacity: 0.8;
 
     h4{
         margin-top: 0;
-        transform: translate(-10%, -25%);
-
+        transform: translate(10%, -350%);
+color: white;
+font-size: 20px;
         width: 400px;
 
     }
 
     .footer-header-container{
-background-color: aquamarine;
+
 width: 70%;
 margin-left: auto;
 margin-right: auto;
@@ -71,10 +87,9 @@ h2{
     font-size: 45px;
     height:100px;
     width: 550px;
-  
-    transform: translate(5%, -65%);
+    transform: translate(15%, -135%);
     padding: 20px;
-    font-family: 'Source Sans Pro';
+    font-family: 'Abel';
     font-size: 75px;
     font-weight: bold;
 }
@@ -82,7 +97,26 @@ h2{
 
     }
 }
-    
+.email-container{
+
+input{
+    background-color: #bcdaf1;
+height: 50px;
+margin-bottom: 20px;
+border: 0;
+}
+button{
+
+    background-color: #fbaabf;
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+}
 
 
 }

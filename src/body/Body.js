@@ -31,7 +31,13 @@ const Body = () => {
       <div className="volunteer-time">
         {timeObject.map((element) => (
           <div className="volunteer-time-box">
-            <h3 style={{ "font-size": "50px", color: "#F3D250" }}>
+            <h3
+              style={{
+                "font-size": "50px",
+                color: "#fdd765",
+                "text-shadow": "5px 5px 10px #e3cef9",
+              }}
+            >
               {" "}
               {element.number}
             </h3>
@@ -55,7 +61,18 @@ const Body = () => {
           <img src="../cloud5.png" style={{ "--i": "6" }} alt="cloud" />
         </div>
       </div>
-      <section></section>
+      <section>
+        section
+        <div>
+          <iframe
+            src="https://www.youtube.com/embed/LrFUKPH8gwk"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="video"
+          />{" "}
+        </div>
+      </section>
     </div>
   );
 };

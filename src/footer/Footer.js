@@ -1,4 +1,16 @@
 import "./footer.scss";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { BsTwitter } from "react-icons/bs";
+import { FaBlackberry, FaFacebookF } from "react-icons/fa";
+
+const style = {
+  color: "white",
+  fontSize: "1.5em",
+  "background-color": "black",
+  border: "solid 10px black",
+  "margin-right": "10px",
+  "margin-top": "10px",
+};
 
 const Footer = () => {
   return (
@@ -48,23 +60,23 @@ const Footer = () => {
             height="200"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
-            fill="#5da2d5"
+            fill="#b5cadf"
             opacity="0.8"
           >
             <path d="M 100 100 V 10 L 0 100" />
-            <path d="M 30 73 L 100 18 V 10 Z" fill="#5da2d5" stroke-width="0" />
+            <path d="M 30 73 L 100 18 V 10 Z" fill="#b5cadf" stroke-width="0" />
           </svg>
         </div>
 
         <div className="color-block-container">
           <div className="footer-header-container">
             <div className="email-container">
-              <h4>donate today or get involved</h4>
-              <form>
+              <h4>Donate Today or Get Involved</h4>
+              <form style={{ display: "grid" }}>
                 <input
                   placeholder="Email"
                   name="email"
-                  value="text"
+                  value="Email"
                   label="message"
                   className="text-box"
                   type="text"
@@ -72,6 +84,11 @@ const Footer = () => {
                 ></input>
                 <button type="submit">Join Our Newsletter</button>
               </form>
+              <div className="icons-container">
+                <FaFacebookF style={style} />
+                <BsTwitter style={style} />
+                <AiOutlineInstagram style={style} />
+              </div>
             </div>
             <div className="logo-icons-container">
               <h2>
@@ -79,7 +96,6 @@ const Footer = () => {
                 By
                 <em style={{ color: "#5da2d5" }}> Donating </em> Today!
               </h2>
-              <div className="icons-container">icons</div>
             </div>
           </div>
         </div>
