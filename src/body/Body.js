@@ -10,8 +10,8 @@ const timeObject = [
     text: "All profits profit helping children's hospital in Ukraine ",
   },
   {
-    number: "149K",
-    text: "bs of food distributed in 2018",
+    number: "$24K",
+    text: "Spent funds",
   },
 ];
 
@@ -25,25 +25,48 @@ const Body = () => {
             Make A Real Change <br></br>In Someone's Life
           </h2>
         </div>
-        <div className="first">1 col</div>
-        <div className="second"> 2 col </div>
+        <div className="first">
+          <p>
+            On March 19th, 7 women got together in one of the neighborhoods of
+            Los Angeles and made 1000+ traditional Ukrainian dumplings to host a
+            fundraiser to support funding for Ukranian children’s hospitals with
+            dobro.ua.The idea was to make homemade vareniki and feed 30+ people.
+            They were shocked on the morning of the event when they discovered
+            over 100 tickets were sold. During the event, attendees made more
+            donations and even more people came without tickets who were willing
+            to donate and support the fundraiser. There were Ukrainians using
+            every opportunity to support their homeland, Russians against the
+            war and standing with Ukraine and local Americans willing to help
+            Ukrainian children. Luckily, there were enough varenikis made for
+            everyone. On that day they raised $6,425. Next day, Peter Diamandis,
+            the chairman of XPRIZE and a person with a big heart, showed
+            interest and matched their proceeds.
+          </p>
+        </div>
+        <div className="second">
+          {" "}
+          <p>
+            Now they were at over 12,000. Next, Assembly, an LA based e-commerce
+            platform, did a 50% match on the fundraise, bringing the total to
+            $16,050 a few days after the fundraiser.As the story was being told,
+            more and more people were getting inspired and willing to
+            participate. A few more generous individuals supported the
+            fundraiser making the total $20,000 a week after the event. Next
+            week, hospitals are receiving the proceedings and first children
+            will receive help. This is the story how without much resources from
+            backyard in Culver city you can make a big impact and difference for
+            children in need. Even though $20k is still a drop in the ocean when
+            millions of Ukrainians are in need, those women believed that if
+            everyone puts in an effort and stands for humanity, a massive change
+            will come.
+          </p>
+        </div>
       </div>
       <div className="volunteer-time">
         {timeObject.map((element) => (
           <div className="volunteer-time-box">
-            <h3
-              style={{
-                "font-size": "50px",
-                color: "#fdd765",
-                "text-shadow": "5px 5px 10px #e3cef9",
-              }}
-            >
-              {" "}
-              {element.number}
-            </h3>
-            <h5 style={{ "font-size": "18px", opacity: "0.8" }}>
-              {element.text}
-            </h5>
+            <h3> {element.number}</h3>
+            <h5>{element.text}</h5>
           </div>
         ))}
       </div>

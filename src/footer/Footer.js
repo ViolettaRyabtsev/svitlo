@@ -1,8 +1,8 @@
 import "./footer.scss";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
-import { FaBlackberry, FaFacebookF } from "react-icons/fa";
-
+import { FaFacebookF } from "react-icons/fa";
+import { useState } from "react";
 const style = {
   color: "white",
   fontSize: "1.5em",
@@ -13,6 +13,13 @@ const style = {
 };
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setEmail("");
+  };
+
   return (
     <div>
       <div className="mission-container">
@@ -72,14 +79,15 @@ const Footer = () => {
           <div className="footer-header-container">
             <div className="email-container">
               <h4>Donate Today or Get Involved</h4>
-              <form style={{ display: "grid" }}>
+              <form onSubmit={handleSubmit} style={{ display: "grid" }}>
                 <input
                   placeholder="Email"
                   name="email"
-                  value="Email"
+                  value={email}
                   label="message"
                   className="text-box"
                   type="text"
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 ></input>
                 <button type="submit">Join Our Newsletter</button>

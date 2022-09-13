@@ -1,4 +1,4 @@
-$small: 375px;
+$small: 393px;
 $medium: 900px;
 
 .body-container{
@@ -6,8 +6,6 @@ $medium: 900px;
 background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,244,214,1) 100%); 
 position: relative;
-
-
 .body-main-container{
 justify-content: center;
 width: 1200px;
@@ -46,11 +44,20 @@ opacity: 0.8;
 .first{
     grid-column-start: 1;
     grid-row-start: 2;
+    margin-right: 50px;
+    p{
+        font-size: 20px;
+        letter-spacing: 0.1rem;
+    }
 
 }
 .second{
     grid-column-start: 2;
     grid-row-start: 2;
+    p{
+        font-size: 20px;
+        letter-spacing: 0.1rem;
+    }
  
 }
 }
@@ -60,13 +67,22 @@ opacity: 0.8;
      margin-left: 0;
      margin-right: 0;
     justify-content: center;
-margin-left:100px ;
+margin-left:80px ;
 
 display: flex;
 .volunteer-time-box{
     margin-right: 100px;
     text-align: center;
     
+    h3{
+        font-size:50px;
+        color: #fdd765;
+        text-shadow: 5px 5px 10px #e3cef9;
+    }
+    h5{
+        font-size: 18px;
+        opacity: 0.8;
+    }
 }
 
 }
@@ -120,17 +136,15 @@ opacity: 0.9;
 section{
     position: absolute;
     z-index: 10;
-    background-color: #fdd765;
    margin-top: 700px;
    margin-right: 600px;
 
-
     .video-container{
           z-index: 10;
-        width: 600px;
+        width: 100%;
         height: 400px;
 iframe{
-    width: 600px;
+    width:600px;
     height: 400px;
 
 }
@@ -142,10 +156,7 @@ iframe{
 
 @media screen and (max-width: $small) {
 
-
     .body-container{
-
-       
 
         .body-main-container{
          
@@ -153,15 +164,35 @@ justify-content: center;
 width: 300px;
 margin-top: 50px;
     display: grid;
-    grid-template-columns: 100px 100px ;
-    grid-template-rows: 100px 300px ;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px 400px 400px ;
+
+   
+    .first{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-right: 10px;
+
+  p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+    }
+    .second{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        margin-right: 10px;
+        p{
+            font-size: 12px;
+            text-align: center;
+          }
+    }
 
     .header-body-container{
        
         width: 600px;
-        position: relative;
+        position: relative;       
         .color-block{
 
     width: 250px;
@@ -171,18 +202,27 @@ margin-top: 50px;
 
         h2{
             transform:  translate(-60%, -90%);
-         
             font-size: 25px;
-        
             text-align: right;
         }
     }
         }
-      
     }
     .volunteer-time{
-  
-   visibility: hidden;
+
+       margin-left:0px ;
+
+.volunteer-time-box{
+    margin-right: 15px;
+
+    h3{
+        font-size:14px;
+    }
+    h5{
+        font-size: 10px;
+    
+    }
+}
    }
 
     section{
@@ -190,7 +230,7 @@ margin-top: 50px;
         z-index: 10;
         background-color: #fdd765;
            margin-top: 500px;
-   margin-right: 10px;
+   margin-right: 0px;
 
 
         .video-container{
@@ -200,33 +240,26 @@ margin-top: 50px;
     iframe{
         width: 350px;
         height: 300px;
-    
     }
             }
-    
-    
     }
     
     
     .image-container-banner{
-
         background-image: url("../../public/candel.jpg");
         position: relative;
-        background-attachment:local;
-        width: 375px;
-        height: 80vh;
+        background-attachment: local;
+        width: 100%;
+        height: 90vh;
         background-size:auto;
         background-position: bottom;
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
+        margin-top: 10px;
         
         .clouds{
         position: absolute;
         top: 0;
         left: 0;
-        width: 375px;
+        width: 100%;
         height: 100%;
         overflow: hidden;
         pointer-events: none;
@@ -234,7 +267,7 @@ margin-top: 50px;
         img{
         position: absolute;
         bottom: 0; 
-        max-width: 40px;
+        max-width: 1300px;
         animation: animate calc(3s * var(--i)) linear infinite; 
            }
          }

@@ -1,5 +1,5 @@
 
-$small: 375px;
+$small: 393px;
 $medium: 900px;
 
 
@@ -39,15 +39,17 @@ position: relative;
         background-color: rgb(249, 247, 244);
         display: grid;
         h5{
- visibility: hidden;
         font-size: 1px;
+        visibility:collapse;
         }
+
+
         img{
-            margin-left: 10px;
+            margin-left: 5px;
             margin-top: 10px;
-            margin-right: 5px;
             width: 90px;
             height: 30px;
+           
         }
             ul{    
             display: inline-block;
@@ -55,6 +57,7 @@ position: relative;
             margin-top: 10px;
             margin-bottom: 10px;
             text-align: left;
+      
             
                 li {
                     display: inline-block;
@@ -68,9 +71,6 @@ position: relative;
          
         
         }
-        
-
-
     
   }
   @media screen and (min-width: $medium) {
