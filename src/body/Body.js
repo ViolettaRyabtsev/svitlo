@@ -60,19 +60,18 @@ const Body = () => {
           <img src="../cloud5.png" style={{ "--i": "7" }} alt="cloud" />
           <img src="../cloud5.png" style={{ "--i": "6" }} alt="cloud" />
         </div>
+        <section>
+          <div className="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/LrFUKPH8gwk"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="video"
+            />{" "}
+          </div>
+        </section>
       </div>
-      <section>
-        section
-        <div>
-          <iframe
-            src="https://www.youtube.com/embed/LrFUKPH8gwk"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="video"
-          />{" "}
-        </div>
-      </section>
     </div>
   );
 };

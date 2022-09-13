@@ -1,5 +1,6 @@
 
-
+$small: 375px;
+$medium: 900px;
 
 .header-container{
 background-image: url("../public/fam2.jpg");
@@ -14,10 +15,12 @@ margin-top: 120px;
 .navigation-container {
 
 position: relative;
-width: 1100px;
+width: 900px;
 margin: auto;
-border-top: solid 170px rgba(#fdd765, 0.8)   ;
+
+border-top: solid 150px rgba(#fdd765, 0.6)   ;
 display: flex;
+
 
 
 
@@ -26,17 +29,14 @@ display: flex;
 h2{
     font-size: 45px;
     height:300px;
-    width: 700px;
-  
-    transform: translate(5%, -65%);
+    width: 600px;
+  text-align: right;
+    transform: translate(-18%, -85%);
     padding: 20px;
-    font-family: 'Abel';
-    font-size: 80px;
+    font-family: "Abril Fatface";
+    font-size: 75px;
     font-weight: bold;
 }
-
-
-
 
 
     }
@@ -49,7 +49,47 @@ h2{
     background:url("../public/border.webp") repeat-x;
     background-size:70px 70px;
     background-position:bottom;
-    transform: translate(-10%, 105%);
+    transform: translate(-5%, 99%);
     position:absolute;
     bottom:0; 
+}
+
+@media screen and (max-width: $small) {
+
+    .header-container{
+       
+  
+     
+        padding: 50px;
+        padding-bottom: 97px;
+        margin-top: 100px;
+
+        .navigation-container {
+
+            position: relative;
+            width: 300px;
+            margin: auto;
+            border-top: solid 70px rgba(#fdd765, 0.6)   ;
+            display: flex;
+
+            h2{
+                font-size: 25px;
+                height:100px;
+                width: 300px;
+              text-align: right;
+                transform: translate(-35%, -130%);
+                padding: 10px;
+                font-family: "Abril Fatface";
+                font-size: 35px;
+                font-weight: bold;
+            }
+        }     
+
+    }        
+
+
+    .border-bottom {
+       visibility: hidden;
+      }
+
 }

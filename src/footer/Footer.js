@@ -94,7 +94,7 @@ const Footer = () => {
               <h2>
                 <strong>Help Ukraine</strong> <br></br>
                 By
-                <em style={{ color: "#5da2d5" }}> Donating </em> Today!
+                <em style={{ color: "#5594d4" }}> Donating </em> Today!
               </h2>
             </div>
           </div>

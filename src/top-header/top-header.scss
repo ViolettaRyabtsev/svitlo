@@ -1,5 +1,6 @@
 
-
+$small: 375px;
+$medium: 900px;
 
 
 
@@ -16,7 +17,7 @@ img{
     display: inline-block;
     justify-content: end;
 position: relative;
-    margin-left: 500px;
+    margin-left: 450px;
     margin-top: 20px;
     margin-bottom: 20px;
     
@@ -24,12 +25,55 @@ position: relative;
             display: inline-block;
             margin-left: 25px;
             font-size: 20px;
-            font-family: 'Source Sans Pro';
+            font-family: 'Abril Fatface';
            
         }
         
     }
  
 
-
 }
+
+@media screen and (max-width: $small) {
+    .navigation-logo{
+        background-color: rgb(249, 247, 244);
+        display: grid;
+        h5{
+ visibility: hidden;
+        font-size: 1px;
+        }
+        img{
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-right: 5px;
+            width: 90px;
+            height: 30px;
+        }
+            ul{    
+            display: inline-block;
+            margin-left: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            
+                li {
+                    display: inline-block;
+                    margin-left: 10px;
+                    font-size: 12px;
+                    font-family: 'Abril Fatface';
+                   
+                }
+                
+            }
+         
+        
+        }
+        
+
+
+    
+  }
+  @media screen and (min-width: $medium) {
+
+
+  }

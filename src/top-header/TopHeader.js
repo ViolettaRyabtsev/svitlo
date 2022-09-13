@@ -9,7 +9,7 @@ const TopHeader = () => {
         <ul>
           <li>Home</li>
           <li>Our Work</li>
-          <li style={{ color: "#feb676" }}>Donate </li>
+          <li style={{ color: "#fdd765" }}>Donate </li>
           <li>Get Involved</li>
           <li>Contact Us</li>
         </ul>

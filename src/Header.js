@@ -8,7 +8,7 @@ const Header = () => {
           <h2>
             <strong>Help Ukraine</strong> <br></br>
             By
-            <em style={{ color: "#b5cadf" }}> Donating </em> Today!
+            <em style={{ color: "#5594d4" }}> Donating </em> Today!
           </h2>
         </div>
       </div>
