@@ -4,7 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { addCollectionsAndDocuments } from "../utils/firebase.utils";
-
+// AwKoEoAcPDGZBa85crAZ
 const style = {
   color: "white",
   fontSize: "1.5em",
@@ -15,11 +15,29 @@ const style = {
 };
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState({ emailBody: "", data: "" });
+
+  const [err, setErr] = useState(null);
+
+  const validEmail = (text) => {
+    return /\S+@\S+\.\S+/.test(text);
+  };
+
+  const handleChange = (e) => {
+    if (!validEmail(e.target.value)) {
+      setErr("Email is invalid");
+    } else {
+      setErr(null);
+    }
+    setEmail({ emailBody: e.target.value, data: new Date() });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEmail("");
+    if (err === null) {
+      addCollectionsAndDocuments("emails", email);
+      setEmail({ emailBody: "", data: "" });
+    }
   };
 
   // useEffect(() => {
@@ -89,14 +107,15 @@ const Footer = () => {
                 <input
                   placeholder="Email"
                   name="email"
-                  value={email}
+                  value={email.emailBody}
                   label="message"
                   className="text-box"
                   type="text"
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={handleChange}
                   required
                 ></input>
                 <button type="submit">Join Our Newsletter</button>
+                {err && <h5 style={{ color: "black" }}>{err}</h5>}
               </form>
               <div className="icons-container">
                 <FaFacebookF style={style} />
