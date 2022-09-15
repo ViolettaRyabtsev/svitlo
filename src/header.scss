@@ -3,7 +3,7 @@ $small: 393px;
 $medium: 900px;
 
 .header-container{
-background-image: url("../public/fam2.jpg");
+background-image: url("https://s3.amazonaws.com/www.svitlola.com/images/fam2.jpg");
   background-position-x: center;
   background-position-y: top 60px;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@ h2{
 .border-bottom {
     height:200px;
     width:100%;
-    background:url("../public/border.webp") repeat-x;
+    background:url("https://s3.amazonaws.com/www.svitlola.com/images/border.webp") repeat-x;
     background-size:70px 70px;
     background-position:bottom;
     transform: translate(-5%, 99%);
@@ -84,7 +84,6 @@ h2{
         }     
 
     }        
-
 
     .border-bottom {
         visibility: hidden;

@@ -4,7 +4,12 @@ const TopHeader = () => {
   return (
     <>
       <div className="navigation-logo">
-        <img src="./Logo_text.png" alt="logo" width="150px" height="40px"></img>
+        <img
+          src="https://s3.amazonaws.com/www.svitlola.com/images/Logo_text.png"
+          alt="logo"
+          width="150px"
+          height="40px"
+        ></img>
         <h5>is Non-Profit Organization </h5>
         <ul>
           <li>Home</li>

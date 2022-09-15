@@ -72,16 +72,56 @@ const Body = () => {
       </div>
       <div className="image-container-banner">
         <div className="clouds">
-          <img src="../cloud1.png" style={{ "--i": "1" }} alt="cloud" />
-          <img src="../cloud2.png" style={{ "--i": "2" }} alt="cloud" />
-          <img src="../cloud3.png" style={{ "--i": "3" }} alt="cloud" />
-          <img src="../cloud4.png" style={{ "--i": "4" }} alt="cloud" />
-          <img src="../cloud5.png" style={{ "--i": "5" }} alt="cloud" />
-          <img src="../cloud5.png" style={{ "--i": "10" }} alt="cloud" />
-          <img src="../cloud5.png" style={{ "--i": "9" }} alt="cloud" />
-          <img src="../cloud5.png" style={{ "--i": "8" }} alt="cloud" />
-          <img src="../cloud5.png" style={{ "--i": "7" }} alt="cloud" />
-          <img src="../cloud5.png" style={{ "--i": "6" }} alt="cloud" />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud1.png"
+            style={{ "--i": "1" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud2.png"
+            style={{ "--i": "2" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud3.png"
+            style={{ "--i": "3" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud4.png"
+            style={{ "--i": "4" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud5.png"
+            style={{ "--i": "5" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud1.png"
+            style={{ "--i": "10" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud3.png"
+            style={{ "--i": "9" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud4.png"
+            style={{ "--i": "8" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud2.png"
+            style={{ "--i": "7" }}
+            alt="cloud"
+          />
+          <img
+            src="https://s3.amazonaws.com/www.svitlola.com/images/cloud1.png"
+            style={{ "--i": "6" }}
+            alt="cloud"
+          />
         </div>
         <section>
           <div className="video-container">

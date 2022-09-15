@@ -2,7 +2,9 @@ import "./footer.scss";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { addCollectionsAndDocuments } from "../utils/firebase.utils";
+
 const style = {
   color: "white",
   fontSize: "1.5em",
@@ -19,6 +21,10 @@ const Footer = () => {
     e.preventDefault();
     setEmail("");
   };
+
+  // useEffect(() => {
+  //   addCollectionsAndDocuments("emails", email);
+  // }, [email]);
 
   return (
     <div>
