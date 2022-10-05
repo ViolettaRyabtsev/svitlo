@@ -1,0 +1,78 @@
+.shop-container{
+background: linear-gradient(180deg, rgba(249,244,214,1) 0%, rgba(255,255,255,1) 100%); 
+padding-top: 20px;
+display: flex;
+
+
+.text-container{
+    font-family: 'Abril Fatface';
+background-color: white;
+width: 60%;
+margin-top: 50px;
+height: 700px;
+padding: 150px;
+padding-left: 150px;
+
+
+h2{
+    font-size: 70px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 0.1rem;
+    font-weight: 200;  
+width: 90%;
+}
+
+button{
+border-radius: 8px;
+width: 180px;
+height: 50px;
+border: none;
+background-color: #b5cadf;
+color: white;
+font-size: 18px;
+}
+}
+
+.img-container{
+transform: translate(-25%, 20%);
+z-index: 4;
+width: 600px;
+height: 600px;
+
+   }
+
+
+   
+}
+
+.shop-container-items{
+    font-family: 'Abril Fatface';
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    margin-left: 80px;
+    margin-bottom: 300px;
+
+ img{
+    margin-right: 80px;
+    width:360px;
+     height:500px;
+ }
+
+ h4{
+    text-align: left;
+    opacity: 0.7;
+ }
+
+ h5{
+    text-align: left;
+    color: red;
+    opacity: 0.8;
+ }
+    
+       }

@@ -1,5 +1,5 @@
 import "./top-header.scss";
-
+import { Link, Outlet } from "react-router-dom";
 const TopHeader = () => {
   return (
     <>
@@ -12,13 +12,20 @@ const TopHeader = () => {
         ></img>
         <h5>is Non-Profit Organization </h5>
         <ul>
-          <li>Home</li>
-          <li>Our Work</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="our-work">Our Work</Link>
+          </li>
           <li style={{ color: "#fdd765" }}>Donate </li>
-          <li>Get Involved</li>
+          <li>
+            <Link to="/shop">Shop</Link>
+          </li>
           <li>Contact Us</li>
         </ul>
       </div>
+      <Outlet />
     </>
   );
 };
